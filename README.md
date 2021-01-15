@@ -3,4 +3,4 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 [![Actions Status](https://github.com/Angryaddict/frontend-project-lvl1/workflows/CI/badge.svg)](https://github.com/Angryaddict/frontend-project-lvl1/actions)
-https://asciinema.org/a/14?t=25&speed=2&theme=solarized-dark
+<a href="https://asciinema.org/a/14"><img src="https://asciinema.org/a/14.png" width="836"/></a>
