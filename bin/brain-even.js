@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import even from '../src/logic.js';
+import { isEven, logic } from '../src/index.js';
 
-even();
+logic('Answer "yes" if the number is even, otherwise answer "no".', [15, 6, 7], isEven);
