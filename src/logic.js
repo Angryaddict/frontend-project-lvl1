@@ -1,8 +1,7 @@
 import readlineSync from 'readline-sync';
 
-const isEven = (num) => {
-  return num % 2 === 0;
-};
+const isEven = (num) => num % 2 === 0;
+
 export default function even() {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
@@ -11,7 +10,7 @@ export default function even() {
   const arr = [15, 6, 7];
   for (const ar of arr) {
     console.log(`Question: ${ar}`);
-    const answer = readlineSync.question(`Your answer: `);
+    const answer = readlineSync.question('Your answer: ');
     const cAnswer = isEven(ar) ? 'yes' : 'no';
     if (answer === cAnswer) {
       console.log('Correct!');
@@ -22,4 +21,4 @@ export default function even() {
     }
   }
   console.log(`Congratulations, ${name}!`);
-};
+}
