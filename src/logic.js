@@ -8,7 +8,7 @@ export default function even() {
   console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const arr = [15, 6, 7];
-  for (const ar of arr) {
+  for (const ar of arr) { // eslint-disable-line
     console.log(`Question: ${ar}`);
     const answer = readlineSync.question('Your answer: ');
     const cAnswer = isEven(ar) ? 'yes' : 'no';

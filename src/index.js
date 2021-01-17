@@ -6,15 +6,17 @@ export function isEven(num) {
 
 export function calc(str) {
   const [a, o, b] = str.split(' ');
+  let result = 0;
   if (o === '+') {
-    return Number(a) + Number(b);
+    result = Number(a) + Number(b);
   }
   if (o === '-') {
-    return Number(a) - Number(b);
+    result = Number(a) - Number(b);
   }
   if (o === '*') {
-    return Number(a) * Number(b);
+    result = Number(a) * Number(b);
   }
+  return result;
 }
 
 export function logic(question, arr, fun) {
@@ -22,11 +24,11 @@ export function logic(question, arr, fun) {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(question);
-  for (const ar of arr) {
+  for (const ar of arr) { // eslint-disable-line
     console.log(`Question: ${ar}`);
     const answer = readlineSync.question('Your answer: ');
     const cAnswer = fun(ar);
-    if (answer == cAnswer) {
+    if (answer == cAnswer) { // eslint-disable-line
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${cAnswer}'.`);
