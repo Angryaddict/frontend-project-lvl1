@@ -4,7 +4,7 @@ function isEven(num) {
   return num % 2 === 0 ? 'yes' : 'no';
 }
 
-function arrGen() {
+export function arrGen() {
   const arr = [];
   for (let i = 0; i < 3; i += 1) {
     arr[i] = Math.ceil(Math.random() * 100);
