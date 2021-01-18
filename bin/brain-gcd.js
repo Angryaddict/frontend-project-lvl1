@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { rndGcd, logic, gcd } from '../src/index.js';
+import gcd from '../src/games/gcd.js';
 
-logic('Find the greatest common divisor of given numbers.', rndGcd, gcd);
+gcd();
