@@ -48,6 +48,28 @@ export function calc(str) {
   return result;
 }
 
+export function gcd(str) {
+  const [a, b] = str.split(' ');
+  const x = Number(a);
+  const y = Number(b);
+  function gcd1(n, m) {
+    if (m > n) return gcd1(m, n);
+    if (!m) return n;
+    return gcd1(m, n % m);
+  }
+  return gcd1(x, y);
+}
+
+export function rndGcd() {
+  const arr = [];
+  for (let i = 0; i < 3; i += 1) {
+    const a = Math.ceil(Math.random() * 100);
+    const b = Math.ceil(Math.random() * 100);
+    arr[i] = `${a} ${b}`;
+  }
+  return arr;
+}
+
 export function logic(question, gen, fun) {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
